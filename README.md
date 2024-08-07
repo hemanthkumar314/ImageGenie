@@ -45,18 +45,18 @@
 
   <h3>Installation</h3>
   <div>
-    <div>1.Clone the Repository:</div>
+    <div>1. Clone the Repository:</div>
     <img src='/clone.png' style='border-radius:5px margin:5px'></img>
-    <div>2.Create a .env file in the root directory with the following environment variables:</div>
+    <div>2. Create a .env file in the root directory with the following environment variables:</div>
     <img src='/env.png'></img>
   </div>
 
   <h3>Usage</h3>
   <div>
-    <div>1.Run the Frontend(Command : npm run dev).Open your Broswer and navigate to http://localhost:5173</div>
-    <div>2.Run the Backend(Command : npm start).Open your Broswer and navigate to http://localhost:8080</div>
-    <div>3.Sign up or log in using your Google Account.</div>
-    <div>4.Now Generate your interested stunning and amazing images</div>
+    <div>1. Run the Frontend(Command : npm run dev).Open your Broswer and navigate to http://localhost:5173</div>
+    <div>2. Run the Backend(Command : npm start).Open your Broswer and navigate to http://localhost:8080</div>
+    <div>3. Sign up or log in using your Google Account.</div>
+    <div>4. Now Generate your interested stunning and amazing images</div>
     
   </div>
   
