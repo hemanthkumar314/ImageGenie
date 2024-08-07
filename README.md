@@ -34,7 +34,7 @@
   </ul>
 </div>
 
-<h2>UsGetting Started</h2>
+<h2>Getting Started</h2>
 <div>
   <h3>PreRequisites</h3>
   <ul>
@@ -46,7 +46,7 @@
   <h3>Installation</h3>
   <div>
     <div>1.Clone the Repository:</div>
-    <img src='/clone.png'></img>
+    <img src='/clone.png' style='border-radius:5px margin:5px'></img>
     <div>2.Create a .env file in the root directory with the following environment variables:</div>
     <img src='/env.png'></img>
   </div>
