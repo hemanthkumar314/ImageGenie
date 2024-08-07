@@ -1,11 +1,20 @@
 import mongoose from "mongoose";
 
-const Post = new mongoose.Schema({
-    name:{type: String, required:true},
-    prompt:{type: String, required:true},
-    photo:{type: String, required:true},
+const UserSchema = new mongoose.Schema({
+    username: { type: String, required: true, unique: true },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true }
 });
 
-const PostSchema = mongoose.model('Post',Post);
+const User = mongoose.model('User', UserSchema);
 
-export default PostSchema;
+const PostSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    prompt: { type: String, required: true },
+    photo: { type: String, required: true },
+    user: { type: String, required:true}
+});
+
+const Post = mongoose.model('Post', PostSchema);
+
+export { User, Post };

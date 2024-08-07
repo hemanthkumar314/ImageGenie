@@ -2,7 +2,7 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import { v2 as cloudinary } from 'cloudinary';
 
-import Post from '../mongodb/models/post.js';
+import {Post} from '../mongodb/models/post.js';
 
 dotenv.config()
 
@@ -14,20 +14,11 @@ cloudinary.config({
     api_secret:process.env.CLOUDINARY_API_SECRET,
 })
 
-// router.route('/').get(async (req, res) =>{
-//     try{
-//         const posts= await Post.find({});
-
-//         res.status(200).json({success:true,data:posts})
-//     }
-//     catch(error){
-//         res.status(500).json({success:false,message:error});
-//     }
-// });
-
-router.route('/').get(async (req, res) =>{
+router.route('/all').post(async (req, res) =>{
     try {
-      const posts = await Post.find({});
+      const { userName } = req.body;
+      console.log(userName);
+      const posts = await Post.find({user:userName});
       console.log('Found posts:', posts.length);
       res.status(200).json({ success: true, data: posts });
     } catch (error) {
@@ -36,11 +27,13 @@ router.route('/').get(async (req, res) =>{
     }
   });
 
-router.route('/').post(async (req, res) =>{
+router.route('/add').post(async (req, res) =>{
 
     try {
-        const { name, prompt, photo } = req.body;
-        // console.log('Received data:', { name, prompt, photo: photo ? 'photo data present' : 'no photo data' });
+        const { name, prompt, photo, userName } = req.body;
+        
+        console.log(userName);
+        console.log(prompt);
 
         let photo_url;
         try {
@@ -54,7 +47,8 @@ router.route('/').post(async (req, res) =>{
         const newPost = await Post.create({
             name: name,
             prompt: prompt,
-            photo: photo_url.secure_url,  
+            photo: photo_url.secure_url,
+            user:userName, 
         });
 
         console.log('New post created:', newPost);
@@ -65,5 +59,17 @@ router.route('/').post(async (req, res) =>{
     }
     
 });
+
+router.route('/deleteimg').post(async (req, res) =>{
+    try {
+      const { id } = req.body;
+      console.log(id);
+      const posts = await Post.deleteOne({_id:id});
+      res.status(200).json({ success: true});
+    } catch (error) {
+      console.error('Error deleting post:', error);
+      res.status(500).json({ success: false, message: error.message });
+    }
+  });
 
 export default router;

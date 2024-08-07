@@ -6,7 +6,7 @@ import { getRandomprompt } from '../utils';
 import { Loader,FormField } from '../components';
 
 
-const CreatePost = () => {
+const CreatePost = ({userName}) => {
 
   const navigate=useNavigate();
   const [form, setForm] = useState({
@@ -14,7 +14,7 @@ const CreatePost = () => {
     prompt:'',
     photo:'',
   })
-
+  console.log(userName)
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading,setLoading] = useState(false);
 
@@ -52,12 +52,12 @@ const CreatePost = () => {
     if (form.prompt && form.photo){
       setLoading(true);
       try{
-        const response = await fetch('http://localhost:8080/api/v1/post', {
+        const response = await fetch('http://localhost:8080/api/v1/post/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(form)
+          body: JSON.stringify({name: form.name,prompt: form.prompt,photo: form.photo,userName: userName})
         })
 
         await response.json();
@@ -85,20 +85,21 @@ const CreatePost = () => {
   }
   
   return (
-    <section className='max-w-7xl mx-[120px]'>
+    
+    <section className='max-w-7xl mx-[120px] mt-4 mb-8'>
       <div>
         <h1 className='font-extrabold text-[#222328] text-[32px]'>Generate Your Interest</h1>
         <p className='mt-2 text-[#666e75] text-[16px] max-w-[800px]'>Create imaginative and visually stunning images through Stability AI 
-                                                                       and add them to Gallery</p>
+                                                                       and add them to Open Gallery</p>
       </div>
 
       <form  className='max-w-3xl mt-16' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-5'>
           <FormField 
-            labelName="Your Name"
+            labelName="Name"
             type="text"
             name="name"
-            placeholder="Hemanth"
+            placeholder="Eiffel Tower"
             value={form.name}
             handleChange={handleChange}
           />
