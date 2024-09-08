@@ -33,3 +33,22 @@ The AI Image Generator is a web application that allows users to authenticate th
    ```bash
    git clone https://github.com/yourusername/ImageGenie.git
    cd ImageGenie
+2. Create a `.env` file in the root directory with the following environment variables:
+
+   ```env
+   MONGODB_URL=Your_Connection_String
+   STABILITY_API_KEY=Your_StabilityAI_API_Key
+   CLOUDINARY_CLOUD_NAME=Your_Cloudinary_Cloud_Name
+   CLOUDINARY_API_KEY=Your_Cloudinary_API_Key
+   CLOUDINARY_API_SECRET=Your_Cloudinary_API_Secret
+
+### Usage
+
+1. Run the Frontend:
+   ```bash
+   npm run dev
+2. Run the Backend Server:
+   ```bash
+   npm start
+3.Sign up or log in using your Google Account.
+4.Now, generate your stunning and amazing images!
