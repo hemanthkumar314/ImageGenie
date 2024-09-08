@@ -54,7 +54,7 @@
     <div>2. Create a .env file in the root directory with the following environment variables:</div>
     <pre>
       <code class="language-javascript">
-        MONGODB_URL=Your_Connection_String
+        <p style={color📙}>MONGODB_URL</p>=Your_Connection_String
         STABILITY_API_KEY=Your_StabilityAI_API_Key
         CLOUDINARY_CLOUD_NAME=Your_Cloudinary_Cloud_Name
         CLOUDINARY_API_KEY=Your_Cloudinary_API_Key
