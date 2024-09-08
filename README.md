@@ -39,16 +39,16 @@
         <li><b>Stability API Secret Key</b></li>
     </ul>
     <h3>Installation</h3>
-    <div class="step">
-        <div class="step-number">1. Clone the Repository:</div>
-        <pre style="background-color: #1e1e1e; padding: 10px; border-radius: 5px; font-size: 0.9em;"><code style="color: #ffa500;">git clone https://github.com/yourusername/ImageGenie.git
+    <div>
+            <div>1. Clone the Repository:</div>
+            <pre style="background-color: #1e1e1e; padding: 10px; border-radius: 5px; font-size: 0.9em;"><code style="color: #ffa500;">git clone https://github.com/yourusername/ImageGenie.git
 cd ImageGenie</code></pre>
             <div class="step-number">2. Create a .env file in the root directory with the following environment variables:</div>
-            <pre style="background-color: #1e1e1e; padding: 10px; border-radius: 5px; font-size: 0.9em;"><code style="color: #4ec9b0;">MONGODB_URL=Your_Connection_String
-STABILITY_API_KEY=Your_StabilityAI_API_Key
-CLOUDINARY_CLOUD_NAME=Your_Cloudinary_Cloud_Name
-CLOUDINARY_API_KEY=Your_Cloudinary_API_Key
-CLOUDINARY_API_SECRET=Your_Cloudinary_API_Secret</code></pre>
+            <pre style="background-color: #1e1e1e; padding: 10px; border-radius: 5px; font-size: 0.9em;"><code><span style="color: #4ec9b0;">MONGODB_URL</span><span style="color: #ffa500;">=</span><span style="color: #569cd6;">Your_Connection_String</span>
+<span style="color: #4ec9b0;">STABILITY_API_KEY</span><span style="color: #ffa500;">=</span><span style="color: #569cd6;">Your_StabilityAI_API_Key</span>
+<span style="color: #4ec9b0;">CLOUDINARY_CLOUD_NAME</span><span style="color: #ffa500;">=</span><span style="color: #569cd6;">Your_Cloudinary_Cloud_Name</span>
+<span style="color: #4ec9b0;">CLOUDINARY_API_KEY</span><span style="color: #ffa500;">=</span><span style="color: #569cd6;">Your_Cloudinary_API_Key</span>
+<span style="color: #4ec9b0;">CLOUDINARY_API_SECRET</span><span style="color: #ffa500;">=</span><span style="color: #569cd6;">Your_Cloudinary_API_Secret</span></code></pre>
         </div>
         <h3>Usage</h3>
         <div>
