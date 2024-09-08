@@ -1,4 +1,4 @@
-<h1>ImageGenie(An AI Image Generator)</h1>
+<h1>ImageGenie(AI Image Generator)</h1>
 <h2>Overview</h2>
 <div>
   The AI Image Generator is a web application that allows users authenticate themselves to generate Amazing and Stunning images using the Stability API.Users can share images(posts) in the Community (Open Gallery), see generated posts along with its prompts, download images, and delete posts. 
