@@ -45,9 +45,11 @@ The AI Image Generator is a web application that allows users to authenticate th
 ### Usage
 
 1. Run the Frontend and navigate to ` http://localhost:5173 ` in broswer
+   
    ```bash
    npm run dev
 2. Run the Backend Server:
+   
    ```bash
    npm start
 3. Sign up or log in using your Google Account
