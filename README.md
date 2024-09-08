@@ -1,4 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGenie: An AI Image Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #2c3e50; }
+        ul { padding-left: 20px; }
+        pre { background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: 'Courier New', Courier, monospace; }
+        .step { margin-bottom: 20px; }
+        .step-number { font-weight: bold; color: #3498db; }
+    </style>
+</head>
+<body>
 <h1>ImageGenie(AI Image Generator)</h1>
 <h2>Overview</h2>
 <div>
@@ -48,7 +64,7 @@
     <pre>
       <code class="language-bash">
        git clone https://github.com/yourusername/ImageGenie.git
-        cd ImageGenie
+       cd ImageGenie
       </code>
     </pre>
     <div class="step-number">2. Create a .env file in the root directory with the following environment variables:</div>
@@ -73,3 +89,4 @@
   </div>
 
 </div>
+</body>
