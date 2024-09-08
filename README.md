@@ -41,8 +41,10 @@
   </ul>
   <h3>Installation</h3>
   <div>
-    <div>1. Clone the Repository:</div>
-    <img src='/clone.png' style='border-radius:5px margin:5px'></img>
+    <div>1. Clone the `Repository`:</div>
+    ```js
+      gui
+    ```
     <div>2. Create a .env file in the root directory with the following environment variables:</div>
     <img src='/env.png'></img>
   </div>
