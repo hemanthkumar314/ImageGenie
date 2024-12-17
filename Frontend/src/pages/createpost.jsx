@@ -30,6 +30,7 @@ const CreatePost = ({userName}) => {
           body: JSON.stringify({ prompt: form.prompt }),
         })
         
+        
         const data = await response.json();
     
         setForm({...form, photo: `data:image/png;base64,${data.photo}`})

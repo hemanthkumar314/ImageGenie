@@ -107,7 +107,7 @@ const Login = ({ onLogin }) => {
           />
         </div>
       </div>
-      <div className='pl-[90px] mt-[25px] text-[#797979] text-[13px]'>
+      <div className='pl-[130px] mt-[25px] text-[#797979] text-[13px]'>
         {action === 'Login' ? (
           <>
             New Member? <span className='text-[#4c00b4] cursor-pointer ml-[10px]' onClick={() => setAction('Sign Up')}>Sign Up</span>
