@@ -1,4 +1,4 @@
-# ImageGenie (AI Image Generator)
+# Text2Image (AI Image Generator)
 
 ## Overview
 The AI Image Generator is a web application that allows users to authenticate themselves to generate amazing and stunning images using the Stability API. Users can share images (posts) in the Community (Open Gallery), see generated posts along with its prompts, download images, and delete posts.
