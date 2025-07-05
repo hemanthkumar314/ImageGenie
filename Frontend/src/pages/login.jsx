@@ -22,7 +22,7 @@ const Login = ({ onLogin }) => {
     console.log("Submitting form");
     console.log(action);
     
-    let url = action === 'Sign Up' ? 'http://localhost:8080/auth/signup': 'http://localhost:8080/auth/login';
+    let url = action === 'Sign Up' ? 'https://imagegenie-oyia.onrender.com/auth/signup': 'https://imagegenie-oyia.onrender.com/auth/login';
     
     console.log(action);
   
